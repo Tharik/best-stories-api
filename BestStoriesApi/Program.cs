@@ -10,8 +10,12 @@ builder.Services.Configure<HackerNewsOptions>(
 
 builder.Services.AddMemoryCache();
 builder.Services.AddControllers();
+builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.EnableAnnotations();
+});
 builder.Services.AddHealthChecks();
 
 builder.Services.AddHttpClient("hn", client =>
