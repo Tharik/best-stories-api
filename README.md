@@ -251,6 +251,25 @@ dotnet test
 
 ---
 
+# 🔄 Continuous Integration
+
+A GitHub Actions pipeline is included to automatically validate every push and pull request.
+
+### Pipeline stages:
+- 📦 Dependency restore
+- 🏗️ Build validation
+- 🧪 Automated test execution
+- 🐳 Docker image build verification
+
+### Benefits:
+- Prevents broken builds
+- Ensures test reliability
+- Validates container deployment
+- Improves delivery confidence
+- Demonstrates production-grade engineering practices
+
+---
+
 # 🐳 Docker Deployment
 
 ## Build image:
