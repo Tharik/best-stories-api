@@ -1,0 +1,15 @@
+bin/
+obj/
+.git/
+.gitignore
+.vscode/
+.vs/
+README.md
+tests/**/bin/
+tests/**/obj/
+Dockerfile*
+docker-compose*
+*.user
+*.suo
+*.cache
+*.tmp
